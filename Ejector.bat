@@ -1,5 +1,5 @@
 @echo off
-title Ejector v.1
+title Ejector v.1.0.0.1
 color 4
 set load=
 set/a loadnum=0
@@ -31,7 +31,7 @@ echo Would you like this to run on startup?
 set /p input=[y/n]
 if %input%==y (goto Startup) else (goto noStartup)
 :Startup
-xcopy ejector.exe "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp" > nul
+xcopy Ejector.vbs "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp" > nul
 :noStartup
 echo Press any key to initiate
 pause > nul
